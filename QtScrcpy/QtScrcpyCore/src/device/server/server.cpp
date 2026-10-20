@@ -400,7 +400,7 @@ bool Server::readInfo(VideoSocket *videoSocket, QString &deviceName, QSize &size
 void Server::startAcceptTimeoutTimer()
 {
     stopAcceptTimeoutTimer();
-    m_acceptTimeoutTimer = startTimer(1000);
+    m_acceptTimeoutTimer = startTimer(8000);
 }
 
 void Server::stopAcceptTimeoutTimer()
